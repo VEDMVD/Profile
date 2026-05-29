@@ -4,11 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
-            header.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
-            header.style.padding = '15px 5%';
+            header.classList.add('scrolled');
         } else {
-            header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
-            header.style.padding = '20px 5%';
+            header.classList.remove('scrolled');
         }
     });
 
